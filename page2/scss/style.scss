@@ -17,8 +17,8 @@
 
     margin: 0 auto;
 }
-button{
-    &:focus{
+button {
+    &:focus {
         transition: 0.5s;
         outline: none;
     }
@@ -67,7 +67,13 @@ button{
         justify-content: space-between;
         align-items: center;
     }
-
+    &__logo {
+        &:hover {
+            transition: .5s;
+            transform: scale(1.1, 1.1);
+            cursor: pointer;
+        }
+    }
     &__list {
         ul {
             display: flex;
@@ -77,6 +83,11 @@ button{
                     font-size: 16px;
                     line-height: 20px;
                     color: white;
+                }
+                &:hover {
+                    transition: .3s;
+                    transform: scale(1.1, 1.1);
+                    cursor: pointer;
                 }
             }
         }
@@ -312,7 +323,7 @@ button{
             }
         }
         p {
-            margin:  50px 20px;
+            margin: 50px 20px;
             font-weight: 500;
             font-size: 16px;
             line-height: 20px;
@@ -337,9 +348,11 @@ button{
 }
 
 .slider .slick-dots {
+    margin-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 50px;
 }
 
 .slider .slick-dots li button {
@@ -503,8 +516,7 @@ button{
             font-size: 18px;
             line-height: 22px;
             text-decoration-line: underline;
-            color: #7165FC ;
-
+            color: #7165fc;
         }
     }
     &__item {
@@ -593,7 +605,7 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   background: linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%);
+    background: linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%);
     border: 1px solid black;
     box-sizing: border-box;
     border-radius: 15px;
@@ -607,8 +619,8 @@ button{
         color: white;
         background-color: unset;
     }
-    button{
-        color:white;
+    button {
+        color: white;
         text-decoration: underline 4px;
     }
 }
@@ -739,14 +751,13 @@ button{
         text-align: center;
     }
 }
-@media(max-width:950px){
-    .interior__title{
-        padding-bottom: 200px ;
+@media (max-width: 950px) {
+    .interior__title {
+        padding-bottom: 200px;
     }
-    .transform-trunk{
+    .transform-trunk {
         margin-top: 40px;
     }
-    
 }
 @media (max-width: 768px) {
     .header__burger {
@@ -825,8 +836,7 @@ button{
 
         padding: 80px 10px 20px 2%;
         transition: 0.3s;
-        background: linear-gradient(60.31deg, #7165FC 24.56%, #4924B8 95.71%);
-
+        background: linear-gradient(60.31deg, #7165fc 24.56%, #4924b8 95.71%);
 
         ul {
             display: flex;
@@ -879,19 +889,19 @@ button{
         margin-top: 10px;
         padding: 0 20px;
     }
-    .review{
+    .review {
         margin-top: 30px;
     }
-    .review__title h3{
+    .review__title h3 {
         font-size: 45px;
     }
 }
-@media(max-width:759px){
-    .review__item{
+@media (max-width: 759px) {
+    .review__item {
         max-width: none;
     }
-    .interior__title{
-        padding-bottom: 50px ;
+    .interior__title {
+        padding-bottom: 50px;
     }
 }
 @media (max-width: 614px) {
@@ -976,6 +986,11 @@ button{
     }
     .interior__title {
         padding-bottom: 50px;
+    }
+}
+@media (max-width: 488px) {
+    .interior__title p {
+        font-size: 13px;
     }
 }
 @media (max-width: 480px) {

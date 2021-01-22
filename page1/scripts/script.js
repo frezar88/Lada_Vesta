@@ -65,27 +65,19 @@ const btn = document.querySelector('.footerbtn');
 const modal = document.querySelector('.modal')
 const site = document.querySelector('.site')
 const modalbtn = document.querySelector('.modalbtn')
+
 let inVal = input.value
 
 
-function check() {
-    input.value = '375'
-    return regexp.test(inVal)
-    
-}
-function btnReset() {
-    btn.innerHTML = 'Отправить'
-    btn.style.background = '#e67e22'
-    btn.style.transform = `scale(1 ,1)`
-}
 
-input.addEventListener('mouseout',function inpaCheck(){
+input.addEventListener('mouseout', function inpaCheck() {
     inVal = input.value
 })
 
+
 btn.addEventListener('click', () => {
-    
-    if (!check()) {
+    inVal = input.value
+    if (!check(input, inVal)) {
         btn.innerHTML = 'ОШИБКА'
         btn.style.background = 'red'
         setTimeout(btnReset, 1500)
@@ -93,10 +85,23 @@ btn.addEventListener('click', () => {
     } else {
         modal.style.display = 'flex'
         modal.style.opacity = '1'
-        site.style.opacity ='0.2'
+        site.style.opacity = '0.2'
     }
-    
 })
+
+
+function btnReset() {
+    btn.innerHTML = 'Отправить'
+    btn.style.background = 'linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%)'
+    btn.style.transform = `scale(1 ,1)`
+}
+
+
+function check(x, y) {
+    x.value = '375'
+    return regexp.test(y)
+}
+
 modalbtn.addEventListener('click', () => {
     site.style.opacity = '1'
     modal.style.display = 'none'

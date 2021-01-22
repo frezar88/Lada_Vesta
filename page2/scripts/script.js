@@ -65,31 +65,28 @@ creatBlock(2)
 
 const regexp = /^(375|80)?(25|33|44|29)([0-9]{3})([0-9]{2})([0-9]{2}$)/gim;
 const input = document.querySelector('.footer__form input');
+const input2 = document.querySelector('.select__text input');
 const btn = document.querySelector('.footerbtn');
+const btn2 = document.querySelector('.select__text button');
 const modal = document.querySelector('.modal')
 const site = document.querySelector('.site')
 const modalbtn = document.querySelector('.modalbtn')
-let inVal = input.value
+
+let inval = input.value
+let inval2 = input.value
 
 
-function check() {
-    input.value = '375'
-    return regexp.test(inVal)
-
-}
-function btnReset() {
-    btn.innerHTML = 'Отправить'
-    btn.style.background = 'linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%)'
-    btn.style.transform = `scale(1 ,1)`
-}
 
 input.addEventListener('mouseout', function inpaCheck() {
     inVal = input.value
 })
+input2.addEventListener('mouseout', function inpaCheck() {
+    inVal2 = input2.value
+})
 
 btn.addEventListener('click', () => {
-
-    if (!check()) {
+    inVal = input.value
+    if (!check(input,inVal)) {
         btn.innerHTML = 'ОШИБКА'
         btn.style.background = 'red'
         setTimeout(btnReset, 1500)
@@ -99,8 +96,37 @@ btn.addEventListener('click', () => {
         modal.style.opacity = '1'
         site.style.opacity = '0.2'
     }
-
 })
+btn2.addEventListener('click', () => {
+    inVal2 = input2.value
+    if (!check(input2, inVal2)) {
+        btn2.innerHTML = 'ОШИБКА'
+        btn2.style.background = 'red'
+        setTimeout(btnReset2, 1500)
+        btn.style.transform = `scale(1.2 ,1.2)`
+    } else {
+        modal.style.display = 'flex'
+        modal.style.opacity = '1'
+        site.style.opacity = '0.2'
+    }
+})
+
+function btnReset() {
+    btn.innerHTML = 'Отправить'
+    btn.style.background = 'linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%)'
+    btn.style.transform = `scale(1 ,1)`
+}
+function btnReset2() {
+    btn2.innerHTML = 'Забронировать'
+    btn2.style.background = 'linear-gradient(131.31deg, #7165fc 14.56%, #4924b8 85.71%)'
+    btn2.style.transform = `scale(1 ,1)`
+}
+
+function check(x,y) {
+    x.value = '375'
+    return regexp.test(y)
+}
+
 modalbtn.addEventListener('click', () => {
     site.style.opacity = '1'
     modal.style.display = 'none'

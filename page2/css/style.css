@@ -164,6 +164,14 @@ button:focus {
           align-items: center;
 }
 
+.header__logo:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
 .header__list ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -178,6 +186,14 @@ button:focus {
   font-size: 16px;
   line-height: 20px;
   color: white;
+}
+
+.header__list ul li:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  cursor: pointer;
 }
 
 .header__title {
@@ -474,6 +490,7 @@ button:focus {
 }
 
 .slider .slick-dots {
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -483,6 +500,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 50px;
 }
 
 .slider .slick-dots li button {
@@ -676,7 +694,7 @@ button:focus {
   line-height: 22px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #7165FC;
+  color: #7165fc;
 }
 
 .review__item {
@@ -1057,7 +1075,7 @@ button:focus {
     padding: 80px 10px 20px 2%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-    background: linear-gradient(60.31deg, #7165FC 24.56%, #4924B8 95.71%);
+    background: linear-gradient(60.31deg, #7165fc 24.56%, #4924b8 95.71%);
   }
   .header__menu ul {
     display: -webkit-box;
@@ -1226,6 +1244,12 @@ button:focus {
   }
   .interior__title {
     padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 488px) {
+  .interior__title p {
+    font-size: 13px;
   }
 }
 

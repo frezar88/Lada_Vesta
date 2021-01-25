@@ -17,12 +17,7 @@ $grey: #828282;
     overflow: hidden;
     font-family: Roboto;
 }
-.activ {
-    display: block;
-}
-.hide {
-    display: none;
-}
+
 button {
     &:focus {
         outline: none;
@@ -32,7 +27,7 @@ button {
     overflow: hidden;
     background-image: url(../img/header/img.png);
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     width: 100%;
 
@@ -66,7 +61,7 @@ button {
     }
 
     &__title {
-        margin-top: 300px;
+        padding-top: 200px;
         h1 {
             padding: 20px;
             font-family: SFProDisplay;
@@ -82,7 +77,7 @@ button {
             color: $white;
         }
     }
-    padding-bottom: 670px;
+    padding-bottom: 470px;
 }
 
 .vesta {
@@ -120,6 +115,7 @@ button {
 
     &__image {
         img {
+            max-width: 1037px;
             width: 100%;
         }
     }
@@ -137,7 +133,7 @@ button {
 
     &__text-item {
         display: flex;
-        margin: 20px 0;
+        margin: 30px 0;
         padding: 0 15px;
 
         span {
@@ -189,7 +185,7 @@ button {
 }
 .video-block {
     padding: 5px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     video {
         margin-top: 120px;
 
@@ -202,6 +198,7 @@ button {
     width: 100%;
     margin: 0 auto;
     h2 {
+        margin-left: 50px;
         position: relative;
         padding: 20px;
         font-family: SFProDisplay;
@@ -220,12 +217,13 @@ button {
     }
 
     &__content {
-        margin-top: 50px;
+        margin-top: 25px;
         display: flex;
         justify-content: space-between;
     }
 
     &__text {
+        margin-left: 55px;
         padding: 0 20px;
         margin-top: 70px;
         max-width: 420px;
@@ -280,6 +278,7 @@ button {
 }
 
 .multy {
+    margin-top: 200px;
     background-color: #4d494a;
     &__wraper {
         max-width: 1440px;
@@ -288,6 +287,7 @@ button {
     }
 
     &__title {
+        margin-left: 50px;
         h2 {
             position: relative;
             padding: 20px;
@@ -313,6 +313,7 @@ button {
     }
 
     &__list {
+        margin-left: 70px;
         ul {
             li {
                 overflow: hidden;
@@ -320,7 +321,7 @@ button {
                 display: grid;
                 justify-content: space-between;
                 align-items: center;
-                padding: 10px 20px;
+                padding: 10px 0px;
                 width: 420px;
                 font-family: Roboto;
                 font-style: normal;
@@ -389,6 +390,7 @@ button {
     }
 
     &__title {
+        margin-left: 50px;
         padding: 0 20px;
         h3 {
             position: relative;
@@ -423,7 +425,7 @@ button {
         h6 {
             margin-bottom: 15px;
             font-family: Roboto;
-            max-width: 380px;
+
             font-weight: bold;
             font-size: 14px;
             line-height: 16px;
@@ -466,19 +468,22 @@ button {
     }
     &__item {
         position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
         background: #fafafa;
         border: 1px solid #bdbdbd;
         box-sizing: border-box;
         border-radius: 10px;
         margin: 10px;
         padding: 10px;
-        max-width: 380px;
+        max-width: 413px;
         min-height: 388px;
     }
 }
 
 .color {
-    margin-top: 220px;
+    margin-top: 150px;
     background: linear-gradient(30.33deg, rgba(77, 73, 74, 0.061) 4.54%, rgba(41, 41, 41, 0.952) 63.69%), #9d9e9d;
 
     &__wrapper {
@@ -489,6 +494,7 @@ button {
     }
 
     &__title {
+        margin-left: 40px;
         h3 {
             position: relative;
             font-family: SFProDisplay;
@@ -513,7 +519,7 @@ button {
     }
 
     &__img {
-        width: 50%;
+        width: 60%;
         img {
             width: 100%;
         }
@@ -523,6 +529,7 @@ button {
     width: 250px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 .slick-track {
     display: flex;
@@ -534,8 +541,7 @@ button {
     order: -1;
     overflow: hidden;
     position: relative;
-
-    max-width: 400px;
+    max-width: 485px;
     width: 100%;
     margin: 0 auto;
     display: flex;
@@ -559,7 +565,7 @@ button {
         border: 1px solid #fafafa;
         box-sizing: border-box;
         border-radius: 50%;
-        margin: 0 5px;
+        margin: 0 8px;
     }
 }
 .item-text {
@@ -583,8 +589,8 @@ button {
 .slick-current {
     margin: 0 10px;
     span {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
     p {
         margin-top: 10px;
@@ -606,7 +612,7 @@ button {
                 content: "Классический  цвет, в котором выразительно проявляется рельефная поверхность кузова";
                 font-size: 16px;
                 line-height: 19px;
-                left: -110px;
+                left: -91px;
                 bottom: -60px;
                 width: 300px;
             }
@@ -626,11 +632,11 @@ button {
 }
 .slider .slick-arrow.slick-prev {
     left: 0;
-    background-image: url(../img/slider/left-arrow.svg);
+    background-image: url(../img/slider/prev.png);
 }
 .slider .slick-arrow.slick-next {
     right: 0;
-    background-image: url(../img/slider/right-arrow.svg);
+    background-image: url(../img/slider/next.png);
 }
 .slider .slick-arrow.slick-disabled {
     opacity: 0.3;
@@ -657,6 +663,7 @@ button {
     }
 
     &__text {
+        margin-left: 40px;
         padding: 20px;
         h3 {
             font-weight: 600;
@@ -732,7 +739,7 @@ button {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(142.33deg, rgba(255, 255, 255, 0.37) 12.54%, rgba(255, 255, 255, 0) 83.69%), #9d9e9d;
+    background: linear-gradient(142.33deg, rgba(38, 156, 2, 0.37) 12.54%, rgba(255, 255, 255, 0) 83.69%), #0f970f;
     border: 1px solid black;
     box-sizing: border-box;
     h2,
@@ -750,11 +757,135 @@ button {
         text-decoration: underline black 4px;
     }
 }
-
+.modal2 {
+    background: linear-gradient(142.33deg, rgba(255, 255, 255, 0.2) 12.54%, rgba(255, 255, 255, 0) 83.69%), #860e02;
+    height: 310px;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+.activ {
+    display: flex;
+}
+.disabled {
+    opacity: 0.5;
+    color: unset;
+}
+.opas0 {
+    opacity: 0.2;
+}
+.modalShow {
+    display: flex;
+    opacity: 1;
+}
+.hide {
+    display: none;
+}
+.loader {
+    font-size: 45px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    top: calc(50% - 120px);
+    left: calc(50% - 20px);
+    border-radius: 50%;
+    margin: 72px auto;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease;
+    animation: load6 1.7s infinite ease;
+}
+@-webkit-keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22,
+            -0.256em -0.789em 0 -0.46em #999999, -0.297em -0.775em 0 -0.477em #999999;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22,
+            -0.671em -0.488em 0 -0.46em #999999, -0.749em -0.34em 0 -0.477em #999999;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22,
+            -0.775em -0.297em 0 -0.46em #999999, -0.82em -0.09em 0 -0.477em #999999;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+    }
+}
+@keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22,
+            -0.256em -0.789em 0 -0.46em #e67e22, -0.297em -0.775em 0 -0.477em #e67e22;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22,
+            -0.671em -0.488em 0 -0.46em #e67e22, -0.749em -0.34em 0 -0.477em #e67e22;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22,
+            -0.775em -0.297em 0 -0.46em #e67e22, -0.82em -0.09em 0 -0.477em #e67e22;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22,
+            0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+    }
+}
 ///////////////////////////////////////
+@media (max-width: 1440px) {
+    .header {
+        background-size: cover;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        width: 100%;
+        padding-bottom: 158px;
+    }
+    .header__title {
+        padding: 200px 50px;
+    }
+    .vesta__title h2 {
+        margin-left: 50px;
+    }
+}
+
 @media (max-width: 1024px) {
     .header {
-        padding-bottom: 200px;
+        padding-bottom: 151px;
+        background-size: cover;
+        background-position: bottom;
     }
     .header__title {
         margin-top: 100px;
@@ -775,9 +906,33 @@ button {
         position: absolute;
         top: 43%;
     }
+    .color__content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .color__wrapper {
+        padding: 0;
+    }
+    .color__title h3 {
+        padding: 10px;
+        text-align: center;
+        &::after {
+            display: none;
+        }
+    }
 }
 
 @media (max-width: 941px) {
+    .review {
+        margin-top: 40px;
+    }
+    .review__title h3 {
+        font-size: 35px;
+        &::after {
+            bottom: 31px;
+            left: 155px;
+        }
+    }
     .vesta__title h2 {
         font-size: 35px;
         &::after {
@@ -823,6 +978,9 @@ button {
     .multy__img {
         order: -110px;
     }
+    .multy__list {
+        margin-left: 0;
+    }
     .multy__title h2 {
         font-size: 35px;
         text-align: center;
@@ -836,8 +994,18 @@ button {
     .multy__img img {
         padding: 0;
     }
+    .multy__title {
+        margin-left: 0;
+    }
+    .multy__title h2::after {
+        display: none;
+    }
 }
 @media (max-width: 768px) {
+    .header__title {
+        margin-top: 100px;
+        padding: 0;
+    }
     .header__burger {
         z-index: 21;
         margin-right: 20px;
@@ -899,7 +1067,7 @@ button {
         top: -200%;
         left: 60%;
         width: 37%;
-        height: 40%;
+
         padding: 80px 10px 20px 2%;
         transition: 0.3s;
         background-color: rgba(0, 0, 0, 0.698);
@@ -949,19 +1117,12 @@ button {
     .color {
         margin-top: 50px;
     }
-    .color__content {
-        flex-direction: column;
-        align-items: center;
+
+    .footer__text {
+        margin-left: 0;
     }
-    .color__wrapper {
-        padding: 0;
-    }
-    .color__title h3 {
-        padding: 10px;
-        text-align: center;
-        &::after {
-            display: none;
-        }
+    .color__title {
+        margin-left: 0;
     }
 }
 
@@ -973,6 +1134,9 @@ button {
 }
 
 @media (max-width: 555px) {
+    .header__title {
+        padding: 0;
+    }
     .vesta__text {
         margin-top: 20px;
     }
@@ -1011,6 +1175,13 @@ button {
 @media (max-width: 490px) {
     .header__title h1 {
         font-size: 60px;
+    }
+    .slider__item span {
+        margin: 0 5px;
+    }
+    .slick-list {
+        width: 215px;
+        overflow: hidden;
     }
 }
 @media (max-width: 350px) {

@@ -43,7 +43,7 @@ button {
     &__bgimage2 {
         display: flex;
 
-        width: 70%;
+        width: 61%;
         z-index: 10;
     }
 
@@ -61,6 +61,7 @@ button {
     }
 
     &__menu {
+        margin-left: 60px;
         padding: 50px 20px;
         display: flex;
 
@@ -69,7 +70,6 @@ button {
     }
     &__logo {
         &:hover {
-            transition: .5s;
             transform: scale(1.1, 1.1);
             cursor: pointer;
         }
@@ -85,7 +85,6 @@ button {
                     color: white;
                 }
                 &:hover {
-                    transition: .3s;
                     transform: scale(1.1, 1.1);
                     cursor: pointer;
                 }
@@ -95,13 +94,15 @@ button {
 
     &__title {
         padding: 0 20px;
-        margin-top: 15em;
+        margin-top: 17em;
         h1 {
+            margin-left: 60px;
             font-weight: 600;
             font-size: 96px;
             line-height: 117px;
         }
         p {
+            margin-left: 50px;
             font-weight: 300;
             font-size: 18px;
             line-height: 22px;
@@ -125,6 +126,7 @@ button {
     }
 
     &__text {
+        margin-left: 60px;
         z-index: 5;
         h3 {
             width: 530px;
@@ -151,6 +153,12 @@ button {
             padding: 0 20px;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15), 0px 10px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1c1c24;
+
             &:focus {
                 outline: none;
             }
@@ -205,28 +213,30 @@ button {
         justify-content: center;
     }
     &__item {
+        margin-bottom: 60px;
+        margin-left: 30px;
         span {
-            display: block;
-            width: 65px;
-            height: 65px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
         }
         &:nth-child(1) span {
             background-image: url(../img/classic_select/bg1.png);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             background-size: cover;
         }
         &:nth-child(2) span {
             background-image: url(../img/classic_select/bg2.png);
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: left;
             background-size: cover;
         }
         &:nth-child(3) span {
             background-image: url(../img/classic_select/bg3.png);
             background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
+            background-position: left;
+            background-size: contain;
         }
     }
 }
@@ -240,6 +250,7 @@ button {
     }
 
     &__text {
+        margin-left: 60px;
     }
     &__title {
         h3 {
@@ -279,7 +290,7 @@ button {
             height: 30px;
         }
         p {
-            margin-bottom: 10px;
+            margin-bottom: 25px;
             max-width: 360px;
         }
     }
@@ -346,6 +357,9 @@ button {
     width: 100%;
     margin: 0 auto;
 }
+.slider__iteam {
+    padding: 0 5px;
+}
 
 .slider .slick-dots {
     margin-top: 30px;
@@ -356,10 +370,10 @@ button {
 }
 
 .slider .slick-dots li button {
-    margin: 55px 5px;
+    margin: 55px 10px;
     font-size: 0;
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: black;
     &:focus {
@@ -373,7 +387,7 @@ button {
 
 /////////////////////////////////////
 .interior {
-    margin-top: 30px;
+    margin-top: 100px;
 
     &__wrapper {
         position: relative;
@@ -481,11 +495,13 @@ button {
 
     &__block {
         margin-top: 40px;
+        margin-left: 30px;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
 
         h6 {
+            max-width: 168px;
             font-family: Montserrat;
             font-weight: 600;
             font-size: 16px;
@@ -509,6 +525,7 @@ button {
             line-height: 20px;
             color: #828282;
             margin-bottom: 35px;
+            max-width: 320px;
         }
         a {
             font-family: Montserrat;
@@ -523,7 +540,7 @@ button {
         border-radius: 10px;
         margin: 10px;
         padding: 10px;
-        max-width: 320px;
+        max-width: 405px;
     }
 }
 ///////////////////////////////////////////////
@@ -550,6 +567,7 @@ button {
     }
 
     &__text {
+        margin-left: 60px;
         padding: 20px;
         h3 {
             font-weight: 600;
@@ -574,6 +592,11 @@ button {
             background: #ffffff;
             box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15), 0px 10px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            font-family: Montserrat;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 22px;
+            color: #1c1c24;
             &:focus {
                 outline: none;
             }
@@ -624,13 +647,104 @@ button {
         text-decoration: underline 4px;
     }
 }
+
+.modal2 {
+    background: linear-gradient(142.33deg, rgba(255, 255, 255, 0.2) 12.54%, rgba(255, 255, 255, 0) 83.69%), #7165fc;
+    height: 310px;
+    h2 {
+        text-align: center;
+        font-size: 30px;
+        padding: 5px;
+    }
+}
+.activ {
+    display: flex;
+}
+.disabled {
+    opacity: 0.5;
+    color: unset;
+}
+.opas0 {
+    opacity: 0.2;
+}
+.modalShow {
+    display: flex;
+    opacity: 1;
+}
+.hide {
+    display: none;
+}
+.loader {
+    font-size: 45px;
+    text-indent: -9999em;
+    overflow: hidden;
+    width: 1em;
+    height: 1em;
+    top: calc(50% - 120px);
+    left: calc(50% - 20px);
+    border-radius: 50%;
+    margin: 72px auto;
+    position: fixed;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-animation: load6 1.7s infinite ease;
+    animation: load6 1.7s infinite ease;
+}
+
+@keyframes load6 {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, 0 -0.83em 0 -0.42em #7165fc, 0 -0.83em 0 -0.44em #7165fc,
+            0 -0.83em 0 -0.46em #7165fc, 0 -0.83em 0 -0.477em #7165fc;
+    }
+    5%,
+    95% {
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, 0 -0.83em 0 -0.42em #7165fc, 0 -0.83em 0 -0.44em #7165fc,
+            0 -0.83em 0 -0.46em #7165fc, 0 -0.83em 0 -0.477em #7165fc;
+    }
+    10%,
+    59% {
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, -0.087em -0.825em 0 -0.42em #7165fc, -0.173em -0.812em 0 -0.44em #7165fc,
+            -0.256em -0.789em 0 -0.46em #7165fc, -0.297em -0.775em 0 -0.477em #7165fc;
+    }
+    20% {
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, -0.338em -0.758em 0 -0.42em #7165fc, -0.555em -0.617em 0 -0.44em #7165fc,
+            -0.671em -0.488em 0 -0.46em #7165fc, -0.749em -0.34em 0 -0.477em #7165fc;
+    }
+    38% {
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, -0.377em -0.74em 0 -0.42em #7165fc, -0.645em -0.522em 0 -0.44em #7165fc,
+            -0.775em -0.297em 0 -0.46em #7165fc, -0.82em -0.09em 0 -0.477em #7165fc;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        box-shadow: 0 -0.83em 0 -0.4em #7165fc, 0 -0.83em 0 -0.42em #7165fc, 0 -0.83em 0 -0.44em #7165fc,
+            0 -0.83em 0 -0.46em #7165fc, 0 -0.83em 0 -0.477em #7165fc;
+    }
+}
 ///////////////////////////////////////////////
 @media (max-width: 1567px) {
     .header__wrapper {
         margin-left: 1%;
     }
 }
+@media (max-width:1255px){
+    .header__title{
+        margin-top: 10em;
+    }
+}
+@media (max-width: 1210px) {
+    .select__item {
+        margin-bottom: 30px;
+        margin-left: 15px;
+    }
+}
 @media (max-width: 1023px) {
+    .protect__text {
+        margin-left: 0;
+    }
     .header__title {
         transition: 0.2s;
         margin-top: 100px;
@@ -684,9 +798,11 @@ button {
             justify-content: space-between;
         }
         &__item {
-            padding: 20px;
+            padding: 10px;
             display: flex;
             align-items: center;
+            margin-bottom: 0;
+            margin-left: 0;
         }
     }
     .interior__title {
@@ -751,7 +867,24 @@ button {
         text-align: center;
     }
 }
+@media (max-width: 960px) {
+    .review__item {
+        margin-top: 30px;
+        max-width: unset;
+        
+    }
+    .review__block p{
+        max-width: unset;
+    }
+    .review__block h6{
+        max-width: unset;
+    }
+}
 @media (max-width: 950px) {
+    .select__item span {
+        width: 80px;
+        height: 80px;
+    }
     .interior__title {
         padding-bottom: 200px;
     }
@@ -760,6 +893,18 @@ button {
     }
 }
 @media (max-width: 768px) {
+    .select {
+        &__text2 {
+            width: 100%;
+            padding: 0;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__item {
+            padding: 10px;
+        }
+    }
     .header__burger {
         z-index: 20;
         margin-right: 20px;
@@ -825,6 +970,7 @@ button {
         }
     }
     .header__menu {
+        margin-left: 0;
         z-index: -20;
         flex-direction: column;
         align-items: center;
@@ -941,18 +1087,6 @@ button {
     }
 }
 @media (max-width: 555px) {
-    .select {
-        &__text2 {
-            width: 100%;
-            padding: 0;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        &__item {
-            padding: 10px;
-        }
-    }
     .interior__title h3 {
         margin-top: 5px;
         padding: 5px 20px;

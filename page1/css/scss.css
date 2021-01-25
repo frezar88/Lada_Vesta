@@ -97,14 +97,6 @@ h6 {
   font-family: Roboto;
 }
 
-.activ {
-  display: block;
-}
-
-.hide {
-  display: none;
-}
-
 button:focus {
   outline: none;
 }
@@ -113,10 +105,10 @@ button:focus {
   overflow: hidden;
   background-image: url(../img/header/img.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-repeat: no-repeat;
   width: 100%;
-  padding-bottom: 670px;
+  padding-bottom: 470px;
 }
 
 .header__wrapper {
@@ -147,6 +139,10 @@ button:focus {
   padding: 10px 30px;
 }
 
+.header__menu ul li:hover {
+  cursor: pointer;
+}
+
 .header__menu ul li a {
   font-family: Roboto;
   font-size: 16px;
@@ -155,7 +151,7 @@ button:focus {
 }
 
 .header__title {
-  margin-top: 300px;
+  padding-top: 200px;
 }
 
 .header__title h1 {
@@ -219,6 +215,7 @@ button:focus {
 }
 
 .vesta__image img {
+  max-width: 1037px;
   width: 100%;
 }
 
@@ -235,7 +232,7 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 0 15px;
 }
 
@@ -290,7 +287,7 @@ button:focus {
 
 .video-block {
   padding: 5px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
 
 .video-block video {
@@ -305,6 +302,7 @@ button:focus {
 }
 
 .protection h2 {
+  margin-left: 50px;
   position: relative;
   padding: 20px;
   font-family: SFProDisplay;
@@ -324,7 +322,7 @@ button:focus {
 }
 
 .protection__content {
-  margin-top: 50px;
+  margin-top: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,6 +332,7 @@ button:focus {
 }
 
 .protection__text {
+  margin-left: 55px;
   padding: 0 20px;
   margin-top: 70px;
   max-width: 420px;
@@ -392,6 +391,7 @@ button:focus {
 }
 
 .multy {
+  margin-top: 200px;
   background-color: #4d494a;
 }
 
@@ -399,6 +399,10 @@ button:focus {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
+}
+
+.multy__title {
+  margin-left: 50px;
 }
 
 .multy__title h2 {
@@ -429,6 +433,10 @@ button:focus {
           justify-content: space-between;
 }
 
+.multy__list {
+  margin-left: 70px;
+}
+
 .multy__list ul li {
   overflow: hidden;
   position: relative;
@@ -440,7 +448,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 20px;
+  padding: 10px 0px;
   width: 420px;
   font-family: Roboto;
   font-style: normal;
@@ -514,6 +522,7 @@ button:focus {
 }
 
 .review__title {
+  margin-left: 50px;
   padding: 0 20px;
 }
 
@@ -558,7 +567,6 @@ button:focus {
 .review__block h6 {
   margin-bottom: 15px;
   font-family: Roboto;
-  max-width: 380px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -605,6 +613,16 @@ button:focus {
 
 .review__item {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #fafafa;
   border: 1px solid #bdbdbd;
   -webkit-box-sizing: border-box;
@@ -612,12 +630,12 @@ button:focus {
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-  max-width: 380px;
+  max-width: 413px;
   min-height: 388px;
 }
 
 .color {
-  margin-top: 220px;
+  margin-top: 150px;
   background: linear-gradient(30.33deg, rgba(77, 73, 74, 0.061) 4.54%, rgba(41, 41, 41, 0.952) 63.69%), #9d9e9d;
 }
 
@@ -626,6 +644,10 @@ button:focus {
   width: 100%;
   margin: 0 auto;
   padding: 20px;
+}
+
+.color__title {
+  margin-left: 40px;
 }
 
 .color__title h3 {
@@ -656,7 +678,7 @@ button:focus {
 }
 
 .color__img {
-  width: 50%;
+  width: 60%;
 }
 
 .color__img img {
@@ -671,6 +693,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
 }
 
 .slick-track {
@@ -690,7 +713,7 @@ button:focus {
           order: -1;
   overflow: hidden;
   position: relative;
-  max-width: 400px;
+  max-width: 485px;
   width: 100%;
   margin: 0 auto;
   display: -webkit-box;
@@ -725,7 +748,7 @@ button:focus {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 8px;
 }
 
 .item-text {
@@ -757,8 +780,8 @@ button:focus {
 }
 
 .slick-current span {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 
 .slick-current p {
@@ -786,7 +809,7 @@ button:focus {
   content: "Классический  цвет, в котором выразительно проявляется рельефная поверхность кузова";
   font-size: 16px;
   line-height: 19px;
-  left: -110px;
+  left: -91px;
   bottom: -60px;
   width: 300px;
 }
@@ -805,12 +828,12 @@ button:focus {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background-image: url(../img/slider/left-arrow.svg);
+  background-image: url(../img/slider/prev.png);
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background-image: url(../img/slider/right-arrow.svg);
+  background-image: url(../img/slider/next.png);
 }
 
 .slider .slick-arrow.slick-disabled {
@@ -844,6 +867,7 @@ button:focus {
 }
 
 .footer__text {
+  margin-left: 40px;
   padding: 20px;
 }
 
@@ -935,7 +959,7 @@ button:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(142.33deg, rgba(255, 255, 255, 0.37) 12.54%, rgba(255, 255, 255, 0) 83.69%), #9d9e9d;
+  background: linear-gradient(142.33deg, rgba(38, 156, 2, 0.37) 12.54%, rgba(255, 255, 255, 0) 83.69%), #0f970f;
   border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -958,9 +982,147 @@ button:focus {
           text-decoration: underline black 4px;
 }
 
+.modal2 {
+  background: linear-gradient(142.33deg, rgba(255, 255, 255, 0.2) 12.54%, rgba(255, 255, 255, 0) 83.69%), #860e02;
+  height: 310px;
+}
+
+.modal2 h2 {
+  text-align: center;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.activ {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.disabled {
+  opacity: 0.5;
+  color: unset;
+}
+
+.opas0 {
+  opacity: 0.2;
+}
+
+.modalShow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}
+
+.loader {
+  font-size: 45px;
+  text-indent: -9999em;
+  overflow: hidden;
+  width: 1em;
+  height: 1em;
+  top: calc(50% - 120px);
+  left: calc(50% - 20px);
+  border-radius: 50%;
+  margin: 72px auto;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: load6 1.7s infinite ease;
+  animation: load6 1.7s infinite ease;
+}
+
+@-webkit-keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+  }
+  5%,
+  95% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+  }
+  10%,
+  59% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22, -0.256em -0.789em 0 -0.46em #999999, -0.297em -0.775em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22, -0.256em -0.789em 0 -0.46em #999999, -0.297em -0.775em 0 -0.477em #999999;
+  }
+  20% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22, -0.671em -0.488em 0 -0.46em #999999, -0.749em -0.34em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22, -0.671em -0.488em 0 -0.46em #999999, -0.749em -0.34em 0 -0.477em #999999;
+  }
+  38% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22, -0.775em -0.297em 0 -0.46em #999999, -0.82em -0.09em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22, -0.775em -0.297em 0 -0.46em #999999, -0.82em -0.09em 0 -0.477em #999999;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #999999;
+  }
+}
+
+@keyframes load6 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+  }
+  5%,
+  95% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+  }
+  10%,
+  59% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22, -0.256em -0.789em 0 -0.46em #e67e22, -0.297em -0.775em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.087em -0.825em 0 -0.42em #e67e22, -0.173em -0.812em 0 -0.44em #e67e22, -0.256em -0.789em 0 -0.46em #e67e22, -0.297em -0.775em 0 -0.477em #e67e22;
+  }
+  20% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22, -0.671em -0.488em 0 -0.46em #e67e22, -0.749em -0.34em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.338em -0.758em 0 -0.42em #e67e22, -0.555em -0.617em 0 -0.44em #e67e22, -0.671em -0.488em 0 -0.46em #e67e22, -0.749em -0.34em 0 -0.477em #e67e22;
+  }
+  38% {
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22, -0.775em -0.297em 0 -0.46em #e67e22, -0.82em -0.09em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, -0.377em -0.74em 0 -0.42em #e67e22, -0.645em -0.522em 0 -0.44em #e67e22, -0.775em -0.297em 0 -0.46em #e67e22, -0.82em -0.09em 0 -0.477em #e67e22;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+            box-shadow: 0 -0.83em 0 -0.4em #e67e22, 0 -0.83em 0 -0.42em #e67e22, 0 -0.83em 0 -0.44em #e67e22, 0 -0.83em 0 -0.46em #e67e22, 0 -0.83em 0 -0.477em #e67e22;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header {
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 158px;
+  }
+  .header__title {
+    padding: 200px 50px;
+  }
+  .vesta__title h2 {
+    margin-left: 50px;
+  }
+}
+
 @media (max-width: 1024px) {
   .header {
-    padding-bottom: 200px;
+    padding-bottom: 151px;
+    background-size: cover;
+    background-position: bottom;
   }
   .header__title {
     margin-top: 100px;
@@ -984,9 +1146,38 @@ button:focus {
     position: absolute;
     top: 43%;
   }
+  .color__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .color__wrapper {
+    padding: 0;
+  }
+  .color__title h3 {
+    padding: 10px;
+    text-align: center;
+  }
+  .color__title h3::after {
+    display: none;
+  }
 }
 
 @media (max-width: 941px) {
+  .review {
+    margin-top: 40px;
+  }
+  .review__title h3 {
+    font-size: 35px;
+  }
+  .review__title h3::after {
+    bottom: 31px;
+    left: 155px;
+  }
   .vesta__title h2 {
     font-size: 35px;
   }
@@ -1041,6 +1232,9 @@ button:focus {
         -ms-flex-order: -110px;
             order: -110px;
   }
+  .multy__list {
+    margin-left: 0;
+  }
   .multy__title h2 {
     font-size: 35px;
     text-align: center;
@@ -1054,9 +1248,19 @@ button:focus {
   .multy__img img {
     padding: 0;
   }
+  .multy__title {
+    margin-left: 0;
+  }
+  .multy__title h2::after {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
+  .header__title {
+    margin-top: 100px;
+    padding: 0;
+  }
   .header__burger {
     z-index: 21;
     margin-right: 20px;
@@ -1123,7 +1327,6 @@ button:focus {
     top: -200%;
     left: 60%;
     width: 37%;
-    height: 40%;
     padding: 80px 10px 20px 2%;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -1184,24 +1387,11 @@ button:focus {
   .color {
     margin-top: 50px;
   }
-  .color__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .footer__text {
+    margin-left: 0;
   }
-  .color__wrapper {
-    padding: 0;
-  }
-  .color__title h3 {
-    padding: 10px;
-    text-align: center;
-  }
-  .color__title h3::after {
-    display: none;
+  .color__title {
+    margin-left: 0;
   }
 }
 
@@ -1213,6 +1403,9 @@ button:focus {
 }
 
 @media (max-width: 555px) {
+  .header__title {
+    padding: 0;
+  }
   .vesta__text {
     margin-top: 20px;
   }
@@ -1261,6 +1454,13 @@ button:focus {
 @media (max-width: 490px) {
   .header__title h1 {
     font-size: 60px;
+  }
+  .slider__item span {
+    margin: 0 5px;
+  }
+  .slick-list {
+    width: 215px;
+    overflow: hidden;
   }
 }
 
